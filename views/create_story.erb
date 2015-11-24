@@ -1,0 +1,19 @@
+<form action="/story/create" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" name="story[title]" placeholder="Title"></input>
+  </div>
+  <div class="form-group">
+    <label for="body">Body</label>
+    <textarea class="form-control" name="story[body]" placeholder="Body" rows="10"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="summary">Summary</label>
+    <textarea class="form-control" name="story[summary]" placeholder="Summary"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="fileUpload">Upload photo</label>
+    <input type="file" name="story[image]"></input>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

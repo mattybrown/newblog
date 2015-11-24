@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'sinatra-flash'
+gem 'bcrypt'
+gem 'data_mapper'
+gem 'dm-sqlite-adapter'
+gem 'carrierwave-datamapper'
+gem 'mini_magick'
+gem 'warden'
+gem 'shotgun'

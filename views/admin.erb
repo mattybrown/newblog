@@ -1,0 +1,23 @@
+<h2>Admin</h2>
+
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @stories.each do |story| %>
+  <tr>
+  <th><%= story.id %></th><td><a href="/read/<%= story.id %>"><%= story.title %></a></td><td><a href="/story/edit/<%= story.id %>">Edit</a></td><td><a href="/story/delete/<%= story.id %>">Delete</a></td>
+  </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<a class="btn btn-primary" href="/story/create">Create new story</a>
