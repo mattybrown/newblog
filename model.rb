@@ -51,6 +51,7 @@ class Story
   property :title, String
   property :body, Text
   property :summary, Text
+  property :created_at, DateTime
 
   mount_uploader :file, ImageUploader
 

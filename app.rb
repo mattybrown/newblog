@@ -22,6 +22,12 @@ class NewsBlog < Sinatra::Base
     env['REQUEST_METHOD'] = 'POST'
   end
 
+  helpers do
+    def pretty_date(date)
+      date.strftime("Published %d/%m/%Y")
+    end
+  end
+
 
   get '/' do
     @stories = Story.all
