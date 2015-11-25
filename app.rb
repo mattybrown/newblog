@@ -28,6 +28,10 @@ class NewsBlog < Sinatra::Base
     erb :index
   end
 
+  get '/work' do
+    erb :work
+  end
+
   get '/read/:id' do
     @story = Story.get(params[:id])
     erb :story
