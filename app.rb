@@ -30,7 +30,7 @@ class NewsBlog < Sinatra::Base
 
 
   get '/' do
-    @stories = Story.all
+    @stories = Story.all(:order => :id.desc)
     erb :index
   end
 
