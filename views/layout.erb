@@ -17,7 +17,8 @@
     <link href="<%= url('/css/jquery.share.css') %>" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <script src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script>
-    <script>tinymce.init({selector:'textarea', plugins:'link, image'});</script>
+    <script>tinymce.init({selector:'textarea', plugins:'link, image', style_formats:[{title: 'Image responsive', selector: 'img', classes: 'img-responsive'}]});
+    </script>
 
     <!-- Analytic tracking code -->
     <script>
