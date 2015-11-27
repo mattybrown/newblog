@@ -1,6 +1,6 @@
 <%= erb :left_column %>
 <div class="col-md-9">
-  <img src="<%= @story.file %>" class="img-rounded img-responsive" />
+  <img src="<%= @story.file %>" class="img-responsive" />
   <p><small><em><%= pretty_date(@story.created_at) %></em></small></p>
   <h2><%= @story.title %></h2>
   <p><%= @story.body %></p>
